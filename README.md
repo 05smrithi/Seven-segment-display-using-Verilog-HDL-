@@ -60,39 +60,39 @@ endmodule
 
 Testbench for Seven-Segment Display:
 
-module ledseg_tb;
-reg [3:0] seg_in;
-wire [6:0] s;
-ledseg dut(seg_in,s);
-initial
-begin
-seg_in=4'b0000;
-#100
-seg_in=4'b0001;
-#100
-seg_in=4'b0010;
-#100
-seg_in=4'b0011;
-#100
-seg_in=4'b0100;
-#100
-seg_in=4'b0101;
-#100
-seg_in=4'b0110;
-#100
-seg_in=4'b0111;
-#100
-seg_in=4'b1000;
-#100
-seg_in=4'b1001;
-#100
-seg_in=4'b1010;
-#100
-seg_in=4'b1111;
-#100
-$finish;
-end
-endmodule
+    module ledseg_tb;
+    reg [3:0] seg_in;
+    wire [6:0] s;
+    ledseg dut(seg_in,s);
+    initial
+    begin
+    seg_in=4'b0000;
+    #100
+    seg_in=4'b0001;
+    #100
+    seg_in=4'b0010;
+    #100
+    seg_in=4'b0011;
+    #100
+    seg_in=4'b0100;
+    #100
+    seg_in=4'b0101;
+    #100
+    seg_in=4'b0110;
+    #100
+    seg_in=4'b0111;
+    #100
+    seg_in=4'b1000;
+    #100
+    seg_in=4'b1001;
+    #100
+    seg_in=4'b1010;
+    #100
+    seg_in=4'b1111;
+    #100
+    $finish;
+    end
+    endmodule
 
 Output:
 ![Screenshot 2024-09-25 155608](https://github.com/user-attachments/assets/46fc8684-c3d5-4807-88a1-2dbebf974be5)
